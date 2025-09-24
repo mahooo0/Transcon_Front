@@ -5,10 +5,10 @@ interface AppConfig {
 }
 
 const config: AppConfig = {
-  backendBaseUrl:
-    import.meta.env.VITE_BACKEND_BASE_URL || 'http://localhost:3001',
-  env: import.meta.env.VITE_ENV || 'development',
-  apiKey: import.meta.env.VITE_API_KEY || '',
+  backendBaseUrl: 'http://94.228.122.24:3000',
+  env:'development',
+  apiKey: 'cqwodo1m2od1_12m2doi12moi1m@kd12',
+
 };
 
 export default config;
