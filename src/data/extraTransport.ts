@@ -1,0 +1,140 @@
+import { FilterField, TableColumn } from '@/types';
+
+const filterFields: FilterField[] = [
+  {
+    key: 'search',
+    label: 'Поиск',
+    type: 'text',
+    placeholder: 'Введите номер или название транспорта',
+  },
+  {
+    key: 'type',
+    label: 'По марке',
+    type: 'text',
+    placeholder: 'Введите марку транспорта',
+  },
+];
+const columns: TableColumn[] = [
+  { key: 'registrationNumber', label: 'Номер', width: '200px' },
+  { key: 'name', label: 'Название', width: '150px' },
+  { key: 'type', label: 'Марка', width: '150px' },
+  { key: 'insuranceTo', label: 'Страховка', width: '150px' },
+  { key: 'technicalInspectionTo', label: 'Техосмотр', width: '150px' },
+  { key: 'notes', label: 'Примечания', width: '120px' },
+  // { key: 'status', label: 'Статус', width: '120px' },
+];
+const mockData = [
+  {
+    num_car: '00AA000',
+    insurance_date: '29-08-2025',
+    technical_inspection_date: '11-11-2025',
+    notes: '1234567890',
+    status: 'В РЕЙСЕ',
+  },
+  {
+    num_car: '01BB111',
+    insurance_date: '30-08-2025',
+    technical_inspection_date: '20-12-2024',
+    notes: 'Грузовой автомобиль',
+    status: 'На базе',
+  },
+  {
+    num_car: '02CC222',
+    insurance_date: '05-01-2025',
+    technical_inspection_date: '10-01-2025',
+    notes: 'Пассажирский автобус',
+    status: 'В ремонте',
+  },
+  {
+    num_car: '03DD333',
+    insurance_date: '25-11-2024',
+    technical_inspection_date: '30-08-2025',
+    notes: 'Специальная техника',
+    status: 'В РЕЙСЕ',
+  },
+  {
+    num_car: '04EE444',
+    insurance_date: '08-02-2025',
+    technical_inspection_date: '16-02-2025',
+    notes: 'Рефрижератор',
+    status: 'На базе',
+  },
+  {
+    num_car: '05FF555',
+    insurance_date: '30-08-2025',
+    technical_inspection_date: '22-03-2025',
+    notes: 'Тягач с прицепом',
+    status: 'В РЕЙСЕ',
+  },
+  {
+    num_car: '06GG666',
+    insurance_date: '12-04-2025',
+    technical_inspection_date: '16-04-2025',
+    notes: 'Самосвал',
+    status: 'В ремонте',
+  },
+  {
+    num_car: '07HH777',
+    insurance_date: '30-05-2025',
+    technical_inspection_date: '03-06-2025',
+    notes: 'Цистерна',
+    status: 'В РЕЙСЕ',
+  },
+  {
+    num_car: '08II888',
+    insurance_date: '14-06-2025',
+    technical_inspection_date: '18-06-2025',
+    notes: 'Платформа',
+    status: 'На базе',
+  },
+  {
+    num_car: '09JJ999',
+    insurance_date: '22-07-2025',
+    technical_inspection_date: '26-07-2025',
+    notes: 'Кран-манипулятор',
+    status: 'В РЕЙСЕ',
+  },
+  {
+    num_car: '10KK000',
+    insurance_date: '05-08-2025',
+    technical_inspection_date: '09-08-2025',
+    notes: 'Бетоновоз',
+    status: 'В ремонте',
+  },
+  {
+    num_car: '11LL111',
+    insurance_date: '18-09-2025',
+    technical_inspection_date: '22-09-2025',
+    notes: 'Автовоз',
+    status: 'В РЕЙСЕ',
+  },
+  {
+    num_car: '12MM222',
+    insurance_date: '28-10-2025',
+    technical_inspection_date: '01-11-2025',
+    notes: 'Лесовоз',
+    status: 'На базе',
+  },
+  {
+    num_car: '13NN333',
+    insurance_date: '15-11-2025',
+    technical_inspection_date: '19-11-2025',
+    notes: 'Эвакуатор',
+    status: 'В РЕЙСЕ',
+  },
+  {
+    num_car: '14OO444',
+    insurance_date: '03-12-2025',
+    technical_inspection_date: '07-12-2025',
+    notes: 'Пикап',
+    status: 'В ремонте',
+  },
+  {
+    num_car: '15PP555',
+    insurance_date: '20-01-2026',
+    technical_inspection_date: '24-01-2026',
+    notes: 'Микроавтобус',
+    status: 'В РЕЙСЕ',
+  },
+];
+export { filterFields, columns, mockData };
