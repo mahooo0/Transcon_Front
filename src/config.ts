@@ -5,7 +5,7 @@ interface AppConfig {
 }
 
 const config: AppConfig = {
-  backendBaseUrl: 'http://94.228.122.24:3000',
+  backendBaseUrl: 'http://31.133.1.15/:3000',
   env:'development',
   apiKey: 'cqwodo1m2od1_12m2doi12moi1m@kd12',
 
